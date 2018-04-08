@@ -13,7 +13,7 @@ class simpleHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
         self.wfile.write(
-            "<h1>Greatings {0} from {1}</h1>".format(
+            "<h1>Greatings TEST {0} from {1}</h1>".format(
                 self.client_address,
                 (socket.gethostname(), PORT_NUMBER)))
         return
